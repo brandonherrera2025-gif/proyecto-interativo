@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestor de Productos - API & Storage</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; padding: 20px; max-width: 600px; margin: auto; }
+        .form-group { margin-bottom: 15px; }
+        input { padding: 8px; width: 80%; }
+        button { padding: 8px 15px; cursor: pointer; margin: 5px 0; }
+        .btn-sync { background-color: #27ae60; color: white; border: none; }
+        .btn-delete { background-color: #e74c3c; color: white; border: none; margin-left: 10px; }
+        li { background: #f4f4f4; margin: 5px 0; padding: 10px; list-style: none; display: flex; justify-content: space-between; align-items: center; }
+    </style>
+</head>
+<body>
+
+    <h2>📦 Gestor de Productos</h2>
+    
+    <!-- TASK 1 & 2: Formulario de captura -->
+    <div class="form-group">
+        <input type="text" id="nombreProd" placeholder="Nombre del producto">
+        <input type="number" id="precioProd" placeholder="Precio">
+        <button id="btnAgregar">Agregar a la Lista</button>
+    </div>
+
+    <button id="btnSincronizar" class="btn-sync">Sincronizar con API (GET)</button>
+
+    <!-- TASK 3: Lista para renderizar -->
+    <ul id="listaProductos"></ul>
+
+    <script src="apps.js"></script>
+</body>
+</html>
